@@ -69,20 +69,20 @@ public class Task1 {
 
         // Преобразуем очереди в числа типа int и перемножаем числа:
 
-        // Первая пара чисел
+        // Первые числа
         int first_num = makeInt(list_1);
         int second_num = makeInt(list_2);
         int composition = first_num * second_num;
         System.out.printf("%d * %d = %d\n", first_num, second_num, composition);
-        // Вторая пара чисел
+        // Вторые числа
         first_num = makeInt(list_3);
         second_num = makeInt(list_4);
-        int composition_2 = first_num * second_num;
+        int composition_2 = first_num + second_num;
         System.out.printf("%d * %d = %d\n", first_num, second_num, composition_2);
 
         //Запаковываем результаты в списки:
         System.out.println();
-        System.out.println("Результирующие коллекции: ");
+        System.out.println("Вывод: ");
         System.out.println(Pack(composition));
         System.out.println(Pack(composition_2));        
     }
