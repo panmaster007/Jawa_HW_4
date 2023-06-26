@@ -54,37 +54,29 @@ public class Task1 {
     }
     public static void main(String[] args) {
 
-        // Создаем очереди
         Deque<String> list_1 = new LinkedList<>(Arrays.asList("3","2","1"));
-        Deque<String> list_2 = new LinkedList<>(Arrays.asList("7","4","-"));
-        Deque<String> list_3 = new LinkedList<>(Arrays.asList("5","2"));
-        Deque<String> list_4 = new LinkedList<>(Arrays.asList("2","2","2"));
-        System.out.println("--------------------------------------------------------------");
+        Deque<String> list_2 = new LinkedList<>(Arrays.asList("5","4","-"));
+        Deque<String> list_3 = new LinkedList<>(Arrays.asList("4","3"));
+        Deque<String> list_4 = new LinkedList<>(Arrays.asList("7","3","1"));
+        System.out.println();
 
-        // Выводим исходные данные
-        System.out.println("На старте: ");
+        System.out.println();
         System.out.println("Первая пара: " + list_1 + ", " + list_2);
         System.out.println("Вторая пара: " + list_3 + ", " + list_4);
         System.out.println();
 
-        // Преобразуем очереди в числа типа int и перемножаем числа:
-
-        // Первые числа
         int first_num = makeInt(list_1);
         int second_num = makeInt(list_2);
         int composition = first_num * second_num;
         System.out.printf("%d * %d = %d\n", first_num, second_num, composition);
-        // Вторые числа
+      
         first_num = makeInt(list_3);
         second_num = makeInt(list_4);
         int composition_2 = first_num + second_num;
-        System.out.printf("%d * %d = %d\n", first_num, second_num, composition_2);
+        System.out.printf("%d + %d = %d\n", first_num, second_num, composition_2);
 
-        //Запаковываем результаты в списки:
         System.out.println();
-        System.out.println("Вывод: ");
         System.out.println(Pack(composition));
         System.out.println(Pack(composition_2));        
-    }
-    
+    }   
 }
