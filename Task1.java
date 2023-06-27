@@ -3,13 +3,6 @@
 // 2) Сложите два числа и верните сумму в виде связанного списка.
 // Одно или два числа могут быть отрицательными.
 
-// Даны два Deque, цифры в обратном порядке.
-// [3,2,1] - пример Deque
-// [5,4,3]- пример второго Deque
-// 1) 123 * 345 = 42 435
-// Ответ всегда - связный список, в обычном порядке
-// [4,2,4,3,5] - пример ответа
-
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -18,9 +11,9 @@ import java.util.Queue;
 public class Task1 {
     
     static int makeInt(Deque<String> arr) {
-        int result=0; // значение к возврату
-        String inS;   // временная, принятый символ
-        int krat = 1; // кратность, определяющая разряд числа
+        int result = 0;
+        String inS;
+        int krat = 1;
 
         while(arr.size() != 0) {
             inS = arr.pollFirst();
@@ -61,8 +54,8 @@ public class Task1 {
         System.out.println();
 
         System.out.println();
-        System.out.println("Первая пара: " + list_1 + ", " + list_2);
-        System.out.println("Вторая пара: " + list_3 + ", " + list_4);
+        System.out.println("Первые числа: " + list_1 + ", " + list_2);
+        System.out.println("Вторые числа: " + list_3 + ", " + list_4);
         System.out.println();
 
         int first_num = makeInt(list_1);
